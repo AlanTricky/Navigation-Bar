@@ -1,0 +1,50 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+ul.demo1 {
+    list-style-type: none;
+    overflow: hidden;
+    background: #333;
+}
+
+ul.demo1 > li {
+    float: left;
+}
+
+ul.demo1 li > a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+ul.nested {
+    position: absolute;
+    list-style-type: none;
+    background: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 2px 3px 6px rgba(0,0,0,.2);
+    z-index: 1;
+    display: none;
+}
+
+ul.nested li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active {
+    background:#4CAF50; 
+}
+ul.demo1 li:hover ul.nested {
+    display: block;
+}
+ul.nested li:hover a {
+    background: #f2f2f2;
+}
+
